@@ -1,0 +1,402 @@
+[
+  {
+    "id": 1,
+    "name": "Classic Leather Strap Watch",
+    "brand_name": "Timeless",
+    "price": 5499,
+    "gender": "Men",
+    "rating": 4.6,
+    "description": "Elegant analog watch featuring a premium leather strap and stainless steel case.",
+    "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=500&q=80"
+  },
+  {
+    "id": 2,
+    "name": "Rose Gold Luxury Watch",
+    "brand_name": "Aurelia",
+    "price": 7299,
+    "gender": "Women",
+    "rating": 4.8,
+    "description": "Stylish rose gold wristwatch with crystal dial accents for elegant occasions.",
+    "image": "https://images.unsplash.com/photo-1516574187841-cb9cc2ca948b?auto=format&fit=crop&w=500&q=80"
+  },
+  {
+    "id": 3,
+    "name": "Digital Sports Smartwatch",
+    "brand_name": "ChronoTech",
+    "price": 6499,
+    "gender": "Unisex",
+    "rating": 4.4,
+    "description": "Feature-packed smartwatch with heart-rate and activity tracking.",
+    "image": "https://images.unsplash.com/photo-1511739001486-6bfe10ce785f?auto=format&fit=crop&w=500&q=80"
+  },
+  {
+    "id": 4,
+    "name": "Minimalist Wall Clock",
+    "brand_name": "UrbanTime",
+    "price": 1899,
+    "gender": "Home",
+    "rating": 4.5,
+    "description": "Modern wall clock with silent mechanism and minimalist style.",
+    "image": "https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&w=500&q=80"
+  },
+  {
+    "id": 5,
+    "name": "Smart Fitness Tracker Watch",
+    "brand_name": "PulseWave",
+    "price": 4999,
+    "gender": "Unisex",
+    "rating": 4.2,
+    "description": "Compact smartwatch with calorie, heart-rate and sleep tracking.",
+    "image": "https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=500&q=80"
+  },
+  {
+    "id": 6,
+    "name": "Stainless Steel Chronograph",
+    "brand_name": "SilverStone",
+    "price": 8599,
+    "gender": "Men",
+    "rating": 4.7,
+    "description": "Chronograph watch with stopwatch functionality and durable steel body.",
+    "image": "https://images.unsplash.com/photo-1529921879218-fd1d50b1b086?auto=format&fit=crop&w=500&q=80"
+  },
+  {
+    "id": 7,
+    "name": "Smart Touch Digital Watch",
+    "brand_name": "TechTime",
+    "price": 5599,
+    "gender": "Unisex",
+    "rating": 4.3,
+    "description": "Touchscreen smartwatch with notifications and step counter.",
+    "image": "https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&w=500&q=80"
+  },
+  {
+    "id": 8,
+    "name": "Luxury Skeleton Watch",
+    "brand_name": "Horologe",
+    "price": 9999,
+    "gender": "Men",
+    "rating": 4.9,
+    "description": "Skeleton mechanical watch showcasing precision craftsmanship.",
+    "image": "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=500&q=80"
+  },
+  {
+    "id": 9,
+    "name": "Elegant Ceramic Dial Watch",
+    "brand_name": "Finesse",
+    "price": 6599,
+    "gender": "Women",
+    "rating": 4.6,
+    "description": "Elegant ceramic design with durable crystal glass dial.",
+    "image": "https://images.unsplash.com/photo-1601924638867-3ec3bdb0b37c?auto=format&fit=crop&w=500&q=80"
+  },
+  {
+    "id": 10,
+    "name": "Round Vintage Wall Clock",
+    "brand_name": "RetroTick",
+    "price": 1499,
+    "gender": "Home",
+    "rating": 4.1,
+    "description": "Classic round wall clock with antique design for timeless interiors.",
+    "image": "https://images.unsplash.com/photo-1541534401786-2077eed87a74?auto=format&fit=crop&w=500&q=80"
+  },
+  {
+    "id": 11,
+    "name": "Minimal Dial Analog Watch",
+    "brand_name": "NordicTime",
+    "price": 4599,
+    "gender": "Men",
+    "rating": 4.5,
+    "description": "Minimalist analog design with leather strap for daily wear.",
+    "image": "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=500&q=80"
+  },
+  {
+    "id": 12,
+    "name": "Diamond Accent Luxury Watch",
+    "brand_name": "Opulence",
+    "price": 8999,
+    "gender": "Women",
+    "rating": 4.9,
+    "description": "Luxury diamond-accented watch with stainless gold case.",
+    "image": "https://images.unsplash.com/photo-1508423134147-addf7132f93d?auto=format&fit=crop&w=500&q=80"
+  },
+  {
+    "id": 13,
+    "name": "Digital Kids Learning Watch",
+    "brand_name": "FunTick",
+    "price": 2999,
+    "gender": "Kids",
+    "rating": 4.3,
+    "description": "Kids’ digital watch with games, learning tools, and alarm.",
+    "image": "https://images.unsplash.com/photo-1612817159949-195b6eb9e96c?auto=format&fit=crop&w=500&q=80"
+  },
+  {
+    "id": 14,
+    "name": "Wooden Wall Clock",
+    "brand_name": "EcoTime",
+    "price": 2199,
+    "gender": "Home",
+    "rating": 4.4,
+    "description": "Eco-friendly wall clock made of reclaimed wood.",
+    "image": "https://images.unsplash.com/photo-1606166325695-1c2e6e28b0db?auto=format&fit=crop&w=500&q=80"
+  },
+  {
+    "id": 15,
+    "name": "Hybrid Analog Smartwatch",
+    "brand_name": "Fusion",
+    "price": 6999,
+    "gender": "Unisex",
+    "rating": 4.5,
+    "description": "Analog watch with smart tracking features and Bluetooth connectivity.",
+    "image": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=500&q=80"
+  },
+  {
+    "id": 16,
+    "name": "Gold Chain Wrist Watch",
+    "brand_name": "Imperial",
+    "price": 7999,
+    "gender": "Women",
+    "rating": 4.7,
+    "description": "Gold-plated chain strap watch perfect for parties and formals.",
+    "image": "https://images.unsplash.com/photo-1612817159949-195b6eb9e96c?auto=format&fit=crop&w=500&q=80"
+  },
+  {
+    "id": 17,
+    "name": "Military Tactical Watch",
+    "brand_name": "Tactron",
+    "price": 6299,
+    "gender": "Men",
+    "rating": 4.6,
+    "description": "Rugged waterproof tactical watch built for outdoor activities.",
+    "image": "https://images.unsplash.com/photo-1587731556938-38755b4803a6?auto=format&fit=crop&w=500&q=80"
+  },
+  {
+    "id": 18,
+    "name": "Smart Health Watch",
+    "brand_name": "PulseTrack",
+    "price": 5799,
+    "gender": "Unisex",
+    "rating": 4.4,
+    "description": "Smartwatch with ECG, SpO2 and activity tracking features.",
+    "image": "https://images.unsplash.com/photo-1512427691650-1e7d3d49a794?auto=format&fit=crop&w=500&q=80"
+  },
+  {
+    "id": 19,
+    "name": "Wall Clock with Temperature Display",
+    "brand_name": "HomeSmart",
+    "price": 2599,
+    "gender": "Home",
+    "rating": 4.2,
+    "description": "Wall clock with digital temperature and humidity indicators.",
+    "image": "https://images.unsplash.com/photo-1513612254506-9e8b6faa3f37?auto=format&fit=crop&w=500&q=80"
+  },
+  {
+    "id": 20,
+    "name": "Luxury Chronograph Watch",
+    "brand_name": "RoyalTick",
+    "price": 10999,
+    "gender": "Men",
+    "rating": 4.9,
+    "description": "Premium chronograph watch with sapphire glass and automatic movement.",
+    "image": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?auto=format&fit=crop&w=500&q=80"
+  },
+  {
+    "id": 21,
+    "name": "Omega Seamaster Diver 300M",
+    "brand_name": "Omega",
+    "price": 48999,
+    "gender": "Men",
+    "rating": 4.8,
+    "description": "Luxury diving watch with stainless steel case and blue ceramic bezel.",
+    "image": "https://images.unsplash.com/photo-1603808033192-082d6919d2e1?auto=format&fit=crop&w=500&q=80"
+  },
+  {
+    "id": 22,
+    "name": "Fossil Grant Chronograph Watch",
+    "brand_name": "Fossil",
+    "price": 9999,
+    "gender": "Men",
+    "rating": 4.6,
+    "description": "Classic chronograph with Roman numerals and leather strap.",
+    "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=500&q=80"
+  },
+  {
+    "id": 23,
+    "name": "Casio G-Shock GA-2100",
+    "brand_name": "Casio",
+    "price": 10999,
+    "gender": "Unisex",
+    "rating": 4.9,
+    "description": "Rugged carbon-core guard watch designed for extreme durability.",
+    "image": "https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&w=500&q=80"
+  },
+  {
+    "id": 24,
+    "name": "Rolex Oyster Perpetual Datejust",
+    "brand_name": "Rolex",
+    "price": 789999,
+    "gender": "Men",
+    "rating": 4.9,
+    "description": "Timeless luxury automatic watch with date display and oyster bracelet.",
+    "image": "https://images.unsplash.com/photo-1600180758890-6f21e0a4b98e?auto=format&fit=crop&w=500&q=80"
+  },
+  {
+    "id": 25,
+    "name": "Daniel Wellington Petite Melrose",
+    "brand_name": "Daniel Wellington",
+    "price": 7499,
+    "gender": "Women",
+    "rating": 4.5,
+    "description": "Minimalist rose gold mesh watch perfect for formal and casual looks.",
+    "image": "https://images.unsplash.com/photo-1544636331-e26879cd4d9b?auto=format&fit=crop&w=500&q=80"
+  },
+  {
+    "id": 26,
+    "name": "Titan Neo Analog Watch",
+    "brand_name": "Titan",
+    "price": 4999,
+    "gender": "Men",
+    "rating": 4.4,
+    "description": "Stylish analog watch with silver dial and stainless steel strap.",
+    "image": "https://images.unsplash.com/photo-1600180758483-3bdee8b3f3a3?auto=format&fit=crop&w=500&q=80"
+  },
+  {
+    "id": 27,
+    "name": "Timex Expedition Field Chronograph",
+    "brand_name": "Timex",
+    "price": 8499,
+    "gender": "Men",
+    "rating": 4.6,
+    "description": "Durable outdoor watch with water resistance and leather strap.",
+    "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=500&q=80"
+  },
+  {
+    "id": 28,
+    "name": "Michael Kors Parker Glitz Watch",
+    "brand_name": "Michael Kors",
+    "price": 11999,
+    "gender": "Women",
+    "rating": 4.7,
+    "description": "Elegant rose gold watch with crystal embellishments and mother-of-pearl dial.",
+    "image": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?auto=format&fit=crop&w=500&q=80"
+  },
+  {
+    "id": 29,
+    "name": "Apple Watch SE (2nd Gen)",
+    "brand_name": "Apple",
+    "price": 29999,
+    "gender": "Unisex",
+    "rating": 4.8,
+    "description": "Smartwatch with fitness tracking, notifications, and heart rate monitor.",
+    "image": "https://images.unsplash.com/photo-1600180758483-3bdee8b3f3a3?auto=format&fit=crop&w=500&q=80"
+  },
+  {
+    "id": 30,
+    "name": "Garmin Fenix 7 Pro",
+    "brand_name": "Garmin",
+    "price": 65999,
+    "gender": "Unisex",
+    "rating": 4.9,
+    "description": "Advanced multisport smartwatch with GPS, solar charging, and health tracking.",
+    "image": "https://images.unsplash.com/photo-1592840069600-5d8e5cfa7a12?auto=format&fit=crop&w=500&q=80"
+  },
+  {
+    "id": 31,
+    "name": "Seiko Presage Automatic",
+    "brand_name": "Seiko",
+    "price": 34999,
+    "gender": "Men",
+    "rating": 4.7,
+    "description": "Elegant automatic dress watch with blue dial and stainless case.",
+    "image": "https://images.unsplash.com/photo-1612815154858-60aa4c64a0c1?auto=format&fit=crop&w=500&q=80"
+  },
+  {
+    "id": 32,
+    "name": "Citizen Eco-Drive Chandler",
+    "brand_name": "Citizen",
+    "price": 15999,
+    "gender": "Men",
+    "rating": 4.6,
+    "description": "Eco-powered watch that never needs a battery, ideal for daily wear.",
+    "image": "https://images.unsplash.com/photo-1592840068603-f2b6bffdc2a8?auto=format&fit=crop&w=500&q=80"
+  },
+  {
+    "id": 33,
+    "name": "Casio Vintage A168WA",
+    "brand_name": "Casio",
+    "price": 2999,
+    "gender": "Unisex",
+    "rating": 4.5,
+    "description": "Retro digital watch with stopwatch and illumination feature.",
+    "image": "https://images.unsplash.com/photo-1600180758970-3b8cc8ad2bde?auto=format&fit=crop&w=500&q=80"
+  },
+  {
+    "id": 34,
+    "name": "Rado True Thinline Quartz",
+    "brand_name": "Rado",
+    "price": 114999,
+    "gender": "Men",
+    "rating": 4.8,
+    "description": "Ultra-slim ceramic quartz watch with scratch-resistant sapphire glass.",
+    "image": "https://images.unsplash.com/photo-1603808033122-f7b2f95e2b02?auto=format&fit=crop&w=500&q=80"
+  },
+  {
+    "id": 35,
+    "name": "Tissot PRX Powermatic 80",
+    "brand_name": "Tissot",
+    "price": 51999,
+    "gender": "Men",
+    "rating": 4.9,
+    "description": "Automatic stainless steel watch with 80-hour power reserve.",
+    "image": "https://images.unsplash.com/photo-1599940824399-b87987ceb72a?auto=format&fit=crop&w=500&q=80"
+  },
+  {
+    "id": 36,
+    "name": "Guess Iconic Silver Dial",
+    "brand_name": "Guess",
+    "price": 9999,
+    "gender": "Women",
+    "rating": 4.5,
+    "description": "Fashionable silver-tone watch with metallic strap and crystal dial.",
+    "image": "https://images.unsplash.com/photo-1592878904946-b3cd8b7a4a8f?auto=format&fit=crop&w=500&q=80"
+  },
+  {
+    "id": 37,
+    "name": "Noise ColorFit Ultra 3",
+    "brand_name": "Noise",
+    "price": 4999,
+    "gender": "Unisex",
+    "rating": 4.4,
+    "description": "Smartwatch with AMOLED display, Bluetooth calling, and fitness modes.",
+    "image": "https://images.unsplash.com/photo-1621447504864-91166b86f772?auto=format&fit=crop&w=500&q=80"
+  },
+  {
+    "id": 38,
+    "name": "Boat Lunar Call Pro",
+    "brand_name": "boAt",
+    "price": 3499,
+    "gender": "Unisex",
+    "rating": 4.3,
+    "description": "Budget-friendly smartwatch with large display and multiple sports modes.",
+    "image": "https://images.unsplash.com/photo-1603808033192-082d6919d2e1?auto=format&fit=crop&w=500&q=80"
+  },
+  {
+    "id": 39,
+    "name": "Emporio Armani Smartwatch 3",
+    "brand_name": "Emporio Armani",
+    "price": 29999,
+    "gender": "Men",
+    "rating": 4.7,
+    "description": "Hybrid smartwatch combining Italian design with smart features.",
+    "image": "https://images.unsplash.com/photo-1612815154694-1d1cf1b8ec3f?auto=format&fit=crop&w=500&q=80"
+  },
+  {
+    "id": 40,
+    "name": "Skagen Signatur Mesh Watch",
+    "brand_name": "Skagen",
+    "price": 8999,
+    "gender": "Women",
+    "rating": 4.6,
+    "description": "Sleek minimalist watch with stainless steel mesh band and clean dial.",
+    "image": "https://images.unsplash.com/photo-1549480017-d76466a4b7b0?auto=format&fit=crop&w=500&q=80"
+  }
+]
