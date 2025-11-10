@@ -150,8 +150,8 @@ export default function AdminDashboard() {
   }, []);
 
   return (
-    <div className="max-w-7xl mx-auto px-4 py-6">
-      <h1 className="text-2xl font-bold text-gray-900 mb-6">Admin Dashboard</h1>
+    <div className="mt-20 max-w-7xl mx-auto px-4 py-6">
+      <h1 className=" pt-20 text-2xl font-bold text-gray-900 mb-6">Admin Dashboard</h1>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
         <div className="rounded-xl border border-gray-200 p-4">

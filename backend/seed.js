@@ -1,32 +1,23 @@
-import dotenv from 'dotenv';
-import { connectDB } from './config/db.js';
-import Product from './models/Product.js';
-import fs from 'fs';
-import path from 'path';
-import url from 'url';
+import mongoose from "mongoose";
+import Product from "./models/Product.js";
+import fs from "fs";
 
-dotenv.config();
+const products = JSON.parse(
+  fs.readFileSync("data/products_2000.json", "utf-8")
+);
 
-const __filename = url.fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
 
-const run = async () => {
-  try {
-    await connectDB();
-    const filePath = path.join(__dirname, 'data', 'products.json');
-    const raw = fs.readFileSync(filePath, 'utf-8');
-    const products = JSON.parse(raw);
-    await Product.deleteMany({});
-    await Product.insertMany(products);
-    // eslint-disable-next-line no-console
-    console.log('Seeded products:', products.length);
-    process.exit(0);
-  } catch (e) {
-    // eslint-disable-next-line no-console
-    console.error(e);
-    process.exit(1);
-  }
-};
+const MONGO_URI = "mongodb+srv://rushi:Rushi%403006@cluster1.rsmuwwv.mongodb.net/tymly?retryWrites=true&w=majority&appName=Cluster1";
 
-run();
+await mongoose.connect(MONGO_URI);
+console.log("✅ Database Connected");
 
+const batchSize = 200;
+for (let i = 0; i < products.length; i += batchSize) {
+  const batch = products.slice(i, i + batchSize);
+  await Product.insertMany(batch);
+  console.log(`✅ Inserted batch ${i / batchSize + 1}`);
+}
+
+await mongoose.disconnect();
+console.log("🎉 All products inserted successfully!");

@@ -1,4 +1,7 @@
-import { Routes, Route, useLocation } from 'react-router-dom';
+import { Routes, Route, useLocation ,useNavigate} from 'react-router-dom';
+import { useEffect } from 'react';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import Header from './components/Header.jsx';
 import Home from './pages/Home.jsx';
 import Shop from './pages/Shop.jsx';
@@ -21,6 +24,7 @@ import { WishlistProvider } from './context/WishlistContext.jsx';
 import { UserProvider } from './context/UserContext.jsx';
 import { ModalProvider, useModal } from './context/ModalContext.jsx';
 import SignInModal from './components/SignInModal.jsx';
+import { useUser } from './context/UserContext.jsx';
 
 function SignInModalWrapper() {
   const { showSignInModal, closeSignInModal } = useModal();
@@ -35,13 +39,18 @@ function Layout({ children }) {
     return <>{children}</>;
   }
 
-  return (
-    <>
-      <Header />
+ return (
+  <div className="min-h-screen flex flex-col">
+    <Header />
+
+    <main className="flex-grow">
       {children}
-      <Footer />
-    </>
-  );
+    </main>
+
+    <Footer />
+  </div>
+);
+
 }
 
 // Protected Route Component
@@ -85,6 +94,8 @@ export default function App() {
                 <Route path="/register" element={<Register />} />
                 <Route path="/order-success" element={<OrderSuccess />} />
                 <Route path="/payment-callback" element={<PaymentCallback />} />
+                <Route path="/about" element={<NotFound />} />
+                <Route path="/contact" element={<NotFound />} />
                 <Route path="*" element={<NotFound />} />
               </Routes>
             </Layout>

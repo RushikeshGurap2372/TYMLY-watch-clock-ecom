@@ -1,9 +1,10 @@
 import { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams , useNavigate } from 'react-router-dom';
 import { fetchProduct } from '../api/productAPI.js';
 import { useCart } from '../context/CartContext.jsx';
 import { useWishlist } from '../context/WishlistContext.jsx';
 import Loader from '../components/Loader.jsx';
+
 
 export default function ProductDetail() {
   const { id } = useParams();
@@ -12,6 +13,7 @@ export default function ProductDetail() {
   const [qty, setQty] = useState(1);
   const { addToCart } = useCart();
   const { toggle, isWished } = useWishlist();
+  const navigate = useNavigate();
 
   useEffect(() => {
     (async () => {
@@ -26,13 +28,13 @@ export default function ProductDetail() {
   if (!product) return <div className="max-w-6xl mx-auto px-4 py-6">Not found</div>;
 
   return (
-    <div className="container mx-auto px-4 sm:px-6 py-6 lg:py-10">
-      <div className="grid lg:grid-cols-2 gap-6 lg:gap-12">
+    <div className="mt-20 container mx-auto px-4 sm:px-6 py-6 lg:py-10">
+      <div className="pt-20 grid lg:grid-cols-2 gap-6 lg:gap-12">
         <div className="space-y-4">
           <div className="aspect-square w-full overflow-hidden rounded-xl bg-gray-50">
             <img 
               className="w-full h-full object-cover" 
-              src={product.images?.[0] || 'https://via.placeholder.com/800'} 
+              src={product.image} 
               alt={product.name} 
             />
           </div>
@@ -92,13 +94,19 @@ export default function ProductDetail() {
             <div className="flex flex-col sm:flex-row gap-3">
               <button
                 onClick={() => addToCart(product, qty)}
-                className="flex-1 btn btn-primary"
+                className="flex-1  border border-black text-black bg-white hover:text-white hover:bg-black p-2"
               >
                 Add to Cart
               </button>
+               <button
+                onClick={() => {addToCart(product, qty); navigate('/checkout')}}
+                className="flex-1 bg-black text-white hover:bg-white hover:text-black hover:border border-black p-2"
+              >
+                Buy Now
+              </button>
               <button
                 onClick={() => toggle(product._id)}
-                className="flex-1 sm:flex-none btn btn-secondary"
+                className="flex-1 sm:flex-none bg-yellow-700 text-white border border-black hover:bg-yellow-900 hover:text-yellow-100 p-2"
               >
                 {isWished(product._id) ? 'Wishlisted' : 'Add to Wishlist'}
               </button>

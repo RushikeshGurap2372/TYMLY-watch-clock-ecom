@@ -1,14 +1,16 @@
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
-import { fetchProducts } from '../api/productAPI.js';
-import ProductCard from '../components/ProductCard.jsx';
-import Loader from '../components/Loader.jsx';
+// import { fetchProducts } from '../api/productAPI.js';
+// import ProductCard from '../components/ProductCard.jsx';
+// import Loader from '../components/Loader.jsx';
 import ElegantFashionHero from '../components/Hero/ElegantFashionHero.jsx';
 import RecommendedProductsCustom from '../components/RecommendedProductsCustom.jsx';
-import CategoryShowcase from '../components/CategoryShowcase.jsx';
-import FeaturedCollection from '../components/FeaturedCollection.jsx';
-import Stats from '../components/Stats.jsx';
-import FashionBlog from '../components/FashionBlog.jsx';
+// import CategoryShowcase from '../components/CategoryShowcase.jsx';
+// import FeaturedCollection from '../components/FeaturedCollection.jsx';
+// import Stats from '../components/Stats.jsx';
+// import FashionBlog from '../components/FashionBlog.jsx';
+ import Carousel from '../components/Hero/Carousel.jsx';
+
 
 export default function Home() {
   const [data, setData] = useState({ products: [] });
@@ -29,16 +31,18 @@ export default function Home() {
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
     >
+      
+      <Carousel />
       <ElegantFashionHero />
       
   {/* Stats Section */}
-  <Stats />
+  {/* <Stats /> */}
 
   {/* Featured Collections */}
-  <FeaturedCollection />
+  {/* <FeaturedCollection /> */}
       
   {/* Recommended Products */}
-  <div className="bg-primary-50 py-8 sm:py-16">
+  <div className="bg-white py-8 sm:py-16">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-8 sm:mb-12">
             <motion.h2
@@ -64,10 +68,10 @@ export default function Home() {
       </div>
 
   {/* Category Showcase */}
-  <CategoryShowcase />
+  {/* <CategoryShowcase /> */}
 
   {/* New Arrivals */}
-  <section className="bg-primary-50 py-16">
+  {/* <section className="bg-primary-50 py-16">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-12">
             <motion.h2
@@ -107,10 +111,10 @@ export default function Home() {
             </div>
           )}
         </div>
-      </section>
+      </section> */}
 
       {/* Fashion Blog Section */}
-      <FashionBlog />
+      {/* <FashionBlog /> */}
     </motion.div>
   );
 }

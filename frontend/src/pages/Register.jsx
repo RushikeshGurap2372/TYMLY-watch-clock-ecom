@@ -40,41 +40,48 @@ export default function Register() {
   };
 
   return (
-    <div className="min-h-screen w-full flex items-center justify-center bg-gradient-to-br from-pink-50 via-orange-50 to-rose-50 py-12 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen w-full flex items-center justify-center bg-gray-900 py-12 px-4 sm:px-6 lg:px-8">
       <motion.div
-        initial={{ opacity: 0, y: 20 }}
+        initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-        className="max-w-md w-full space-y-8 bg-white p-8 rounded-2xl shadow-2xl border border-gray-100"
+        transition={{ duration: 0.6 }}
+        className="max-w-md w-full space-y-10 bg-white p-10 rounded-lg shadow-2xl border border-gray-100"
       >
         <div>
-          <Link to="/" className="flex justify-center mb-6">
-            <span className="text-4xl font-black tracking-tight text-gray-900 hover:text-rose-600 transition-colors uppercase">
-              ETRO
-              <span className="block w-6 h-0.5 bg-rose-600 mx-auto mt-1"></span>
+          <Link to="/" className="flex justify-center mb-8">
+            {/* Logo: Sophisticated look with a golden/yellow accent - Matches Login.jsx */}
+            <span className="text-4xl font-serif font-bold tracking-widest text-gray-900 transition-colors uppercase">
+              TYMLY
+              <span className="block w-full h-0.5 bg-yellow-600 mx-auto mt-1 transform scale-x-75"></span>
             </span>
           </Link>
-          <h2 className="text-center text-3xl font-extrabold text-gray-900">
-            Create your account
+          <h2 className="text-center text-3xl font-serif font-light text-gray-900 tracking-wider">
+            Begin Your Collection
           </h2>
-          <p className="mt-2 text-center text-sm text-gray-600">
+          <p className="mt-4 text-center text-sm text-gray-500 font-light">
+            Create an account to manage your profile and purchases.
+            <br />
             Or{' '}
-            <Link to="/login" className="font-medium text-pink-600 hover:text-pink-500">
+            <Link 
+              to="/login" 
+              className="font-medium text-yellow-700 hover:text-yellow-600 border-b border-yellow-700 hover:border-yellow-600 transition-colors"
+            >
               sign in to your existing account
             </Link>
           </p>
         </div>
         <form className="mt-8 space-y-6" onSubmit={handleSubmit}>
+          {/* Error Message */}
           {error && (
-            <div className="rounded-md bg-red-50 p-4">
+            <div className="rounded-sm bg-red-50 p-4 border border-red-300">
               <div className="flex">
-                <div className="ml-3">
-                  <h3 className="text-sm font-medium text-red-800">{error}</h3>
-                </div>
+                <div className="text-sm font-medium text-red-800">{error}</div>
               </div>
             </div>
           )}
-          <div className="rounded-md shadow-sm space-y-4">
+          
+          <div className="space-y-4">
+            {/* Name Input */}
             <div>
               <label htmlFor="name" className="sr-only">
                 Full Name
@@ -85,12 +92,13 @@ export default function Register() {
                 type="text"
                 autoComplete="name"
                 required
-                className="appearance-none relative block w-full px-3 py-3 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-md focus:outline-none focus:ring-pink-500 focus:border-pink-500 focus:z-10 sm:text-sm"
+                className="appearance-none relative block w-full px-4 py-3 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-sm focus:outline-none focus:ring-yellow-600 focus:border-yellow-600 sm:text-sm transition duration-150 ease-in-out"
                 placeholder="Full Name"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
               />
             </div>
+            {/* Email Input */}
             <div>
               <label htmlFor="email-address" className="sr-only">
                 Email address
@@ -101,12 +109,13 @@ export default function Register() {
                 type="email"
                 autoComplete="email"
                 required
-                className="appearance-none relative block w-full px-3 py-3 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-md focus:outline-none focus:ring-pink-500 focus:border-pink-500 focus:z-10 sm:text-sm"
+                className="appearance-none relative block w-full px-4 py-3 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-sm focus:outline-none focus:ring-yellow-600 focus:border-yellow-600 sm:text-sm transition duration-150 ease-in-out"
                 placeholder="Email address"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
               />
             </div>
+            {/* Password Input */}
             <div>
               <label htmlFor="password" className="sr-only">
                 Password
@@ -117,12 +126,13 @@ export default function Register() {
                 type="password"
                 autoComplete="new-password"
                 required
-                className="appearance-none relative block w-full px-3 py-3 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-md focus:outline-none focus:ring-pink-500 focus:border-pink-500 focus:z-10 sm:text-sm"
+                className="appearance-none relative block w-full px-4 py-3 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-sm focus:outline-none focus:ring-yellow-600 focus:border-yellow-600 sm:text-sm transition duration-150 ease-in-out"
                 placeholder="Password (min 6 characters)"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
               />
             </div>
+            {/* Confirm Password Input */}
             <div>
               <label htmlFor="confirm-password" className="sr-only">
                 Confirm Password
@@ -133,7 +143,7 @@ export default function Register() {
                 type="password"
                 autoComplete="new-password"
                 required
-                className="appearance-none relative block w-full px-3 py-3 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-md focus:outline-none focus:ring-pink-500 focus:border-pink-500 focus:z-10 sm:text-sm"
+                className="appearance-none relative block w-full px-4 py-3 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-sm focus:outline-none focus:ring-yellow-600 focus:border-yellow-600 sm:text-sm transition duration-150 ease-in-out"
                 placeholder="Confirm Password"
                 value={confirmPassword}
                 onChange={(e) => setConfirmPassword(e.target.value)}
@@ -145,9 +155,17 @@ export default function Register() {
             <button
               type="submit"
               disabled={loading}
-              className="group relative w-full flex justify-center py-3 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-pink-600 hover:bg-pink-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-500 disabled:opacity-50 disabled:cursor-not-allowed transition-colors duration-200"
+              // Button: Dark/Black background with golden hover effect - Matches Login.jsx
+              className="group relative w-full flex justify-center py-3 px-4 border border-transparent text-sm font-semibold rounded-sm text-white bg-gray-900 hover:bg-yellow-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-600 disabled:opacity-70 disabled:cursor-not-allowed transition-all duration-300 uppercase tracking-widest"
             >
-              {loading ? 'Creating account...' : 'Create account'}
+              {loading ? (
+                <span className="flex items-center">
+                  <Loader2 size={16} className="mr-2 animate-spin" /> 
+                  Creating Account...
+                </span>
+              ) : (
+                'Create Account'
+              )}
             </button>
           </div>
         </form>

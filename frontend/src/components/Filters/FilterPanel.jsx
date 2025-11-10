@@ -10,14 +10,15 @@ const PRICE_RANGES = [
 ];
 
 const COLORS = ['Black', 'White', 'Blue', 'Red', 'Green', 'Yellow', 'Pink', 'Brown'];
-const SIZES = ['XS', 'S', 'M', 'L', 'XL', 'XXL'];
-const BRANDS = ['Zara', 'H&M', 'Nike', 'Adidas', 'Puma', 'Levis'];
+const STRAP_MATERIAL = ["Bimetal", "Plastic", "Silicone", "Leather", "Ceramic", "Denim Leather"];
+
+const BRANDS = ["Rolex", "Omega", "Patek Philippe", "Audemars Piguet", "Breitling", "Cartier"];
 
 export default function FilterPanel({ params, onChange, title = 'Filters' }) {
   const activeMin = params.get('minPrice');
   const activeMax = params.get('maxPrice');
   const activeColors = useMemo(() => new Set((params.get('colors') || '').split(',').filter(Boolean)), [params]);
-  const activeSizes = useMemo(() => new Set((params.get('sizes') || '').split(',').filter(Boolean)), [params]);
+  const activeSizes = useMemo(() => new Set((params.get('strap_material') || '').split(',').filter(Boolean)), [params]);
   const activeBrands = useMemo(() => new Set((params.get('brands') || '').split(',').filter(Boolean)), [params]);
 
   const apply = (updates) => {
@@ -41,7 +42,7 @@ export default function FilterPanel({ params, onChange, title = 'Filters' }) {
   };
 
   const clearAll = () => {
-    const keys = ['minPrice', 'maxPrice', 'colors', 'sizes', 'brands'];
+    const keys = ['minPrice', 'maxPrice', 'colors', 'strap', 'brands'];
     const next = new URLSearchParams(params);
     keys.forEach((k) => next.delete(k));
     next.set('page', '1');
@@ -86,12 +87,12 @@ export default function FilterPanel({ params, onChange, title = 'Filters' }) {
         </section>
 
         <section>
-          <h4 className="text-xs font-semibold text-gray-700 mb-2 uppercase tracking-wide">Size</h4>
-          <div className="grid grid-cols-3 gap-2">
-            {SIZES.map((s) => (
+          <h4 className="text-xs font-semibold text-gray-700 mb-2 uppercase tracking-wide">Strap Material</h4>
+          <div className="grid grid-cols gap-2">
+            {STRAP_MATERIAL.map((s) => (
               <label key={s} className="inline-flex items-center gap-2 text-sm text-gray-700">
                 <input type="checkbox" className="h-4 w-4 rounded border-gray-300"
-                  checked={activeSizes.has(s)} onChange={() => toggleListValue('sizes', s)} />
+                  checked={activeSizes.has(s)} onChange={() => toggleListValue('strap_material', s)} />
                 <span>{s}</span>
               </label>
             ))}
