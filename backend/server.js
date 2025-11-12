@@ -2,6 +2,7 @@ import express from 'express';
 import dotenv from 'dotenv';
 import cors from 'cors';
 import morgan from 'morgan';
+import path from "path";
 import { connectDB } from './config/db.js';
 
 // Routes
@@ -27,20 +28,32 @@ if (process.env.NODE_ENV !== 'test') {
 connectDB();
 
 // Health
-app.get('/api/health', (req, res) => {
+app.get('/health', (req, res) => {
   res.json({ status: 'ok' });
 });
 
 // API routes
-app.use('/api/products', productRoutes);
-app.use('/api/users', userRoutes);
-app.use('/api/orders', orderRoutes);
-app.use('/api/cart', cartRoutes);
-app.use('/api/wishlist', wishlistRoutes);
+app.use('/products', productRoutes);
+app.use('/users', userRoutes);
+app.use('/orders', orderRoutes);
+app.use('/cart', cartRoutes);
+app.use('/wishlist', wishlistRoutes);
 
 app.use((req, res) => {
   res.status(404).json({ message: 'Not Found' });
 });
+
+
+const __dirname = path.resolve();
+
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static(path.join(__dirname, "/frontend/dist")));
+  app.get("*", (req, res) =>
+    res.sendFile(path.resolve(__dirname, "frontend", "dist", "index.html"))
+  );
+}
+
+
 
 const PORT = process.env.PORT || 5001;
 app.listen(PORT, () => {
