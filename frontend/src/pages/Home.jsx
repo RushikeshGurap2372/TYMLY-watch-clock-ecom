@@ -10,6 +10,7 @@ import RecommendedProductsCustom from '../components/RecommendedProductsCustom.j
 // import Stats from '../components/Stats.jsx';
 // import FashionBlog from '../components/FashionBlog.jsx';
  import Carousel from '../components/Hero/Carousel.jsx';
+ import {fetchProducts } from '../api/productAPI.js'
 
 
 export default function Home() {
